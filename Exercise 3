@@ -1,0 +1,87 @@
+1. # Define the string
+string = "Jessie Bandol"
+
+# Calculate the length of the string
+length = len(string)
+
+# Print the length
+print("The length of the string is:", length)
+
+2.# Get input from the user
+user_string = input("Enter a string: Jessie Bandol")
+
+# Count the number of characters in the string
+num_characters = len(user_string)
+
+# Display the result
+print(f"The number of characters in the string is: {num_characters}")
+
+3.def replace_first_char(input_string):
+    # Check if the string is empty
+    if not input_string:
+        return ""
+
+    # Get the first character
+    first_char = input_string[0]
+    
+    # Replace all occurrences of the first character (except the first one) with '$'
+    modified_string = first_char + input_string[1:].replace(first_char, '$')
+    
+    return modified_string
+
+# Get input from the user
+user_string = input("Enter a string: ")
+
+# Get the modified string
+result = replace_first_char(user_string)
+
+# Display the result
+print(f"Modified string: {result}")
+
+4.def swap_first_two_chars(s):
+    # Swap the first two characters of the string
+    if len(s) < 2:
+        return s  # Return the string unchanged if it has fewer than 2 characters
+    return s[1] + s[0] + s[2:]
+
+# Get two strings from the user
+string1 = input("Enter the first string: ")
+string2 = input("Enter the second string: ")
+
+# Swap the first two characters of each string
+modified_string1 = swap_first_two_chars(string1)
+modified_string2 = swap_first_two_chars(string2)
+
+# Combine the modified strings with a space in between
+result = modified_string1 + " " + modified_string2
+
+# Display the result
+print(f"Combined string: {result}")
+
+5.var1 = "Hello"
+var2 = "world"
+var3 = "from"
+var4 = "Python"
+
+result = var1 + " " + var2 + " " + var3 + " " + var4
+print(result)
+
+6. # Define your name and age
+name = "Jessie Bandol"  # Replace with your name
+age = 30  # Replace with your age
+
+# Create a paragraph by concatenating strings
+paragraph = "My name is " + name + " and I am " + str(age) + " years old."
+
+# Output the paragraph
+print(paragraph)
+
+7.# Define your name and age
+name = "Jessie Bandol"  # Replace with your name
+age = 30  # Replace with your age
+
+# Create a paragraph by concatenating strings
+paragraph = "My name is " + name + " and I am " + str(age) + " years old."
+
+# Output the paragraph
+print(paragraph)
